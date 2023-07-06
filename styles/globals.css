@@ -2,26 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+*{
+    font-family: 'Outfit', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.glass{
+    background: linear-gradient(110.53deg, rgba(255, 255, 255, 0.35) -46.34%, rgba(235, 235, 235, 0.257148) -16.97%, rgba(224, 224, 224, 0.201253) -5.16%, rgba(212, 212, 212, 0.147917) 12.06%, rgba(207, 207, 207, 0.122909) 24.05%, rgba(202, 202, 202, 0.100402) 32.09%, rgba(200, 200, 200, 0.0884096) 39.6%, rgba(196, 196, 196, 0.07) 51.42%);
+    box-shadow: 0px 1.650598406791687px 39.61436462402344px -1.650598406791687px rgba(0, 0, 0, 0.18);
+    border-radius: 825.2991943359375px;
+    gap: 1.5468013286590576px;
+    
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.gradient_text{
+    background: linear-gradient(180deg, #9480FF 0%, #6129FF 100%);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+
+.gradient-btn{
+    background: linear-gradient(180deg, #9480FF 0%, #6129FF 100%);
+    box-shadow: 0px 0px 0px 4px rgba(255, 255, 255, 0.07);
+    box-shadow: 0px 1px 0px 0px rgba(255, 255, 255, 0.4) inset;
+    box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0px 0px 180px 0px rgba(110, 63, 255, 1);
+}
+
+.glass-btn{
+    background: linear-gradient(110.53deg, rgba(255, 255, 255, 0.35) -46.34%, rgba(235, 235, 235, 0.257148) -16.97%, rgba(224, 224, 224, 0.201253) -5.16%, rgba(212, 212, 212, 0.147917) 12.06%, rgba(207, 207, 207, 0.122909) 24.05%, rgba(202, 202, 202, 0.100402) 32.09%, rgba(200, 200, 200, 0.0884096) 39.6%, rgba(196, 196, 196, 0.07) 51.42%);
+    box-shadow: 0px 1.650598406791687px 39.61436462402344px -1.650598406791687px #0000002E;
+    border-radius: 48px;
+    gap: 10px;
 }
